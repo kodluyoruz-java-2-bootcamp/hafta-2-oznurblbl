@@ -24,7 +24,7 @@ public class RAM extends Hardware
     @Override
     public double getPrice() {
         if (memory>16 && frequency>3600){
-            int addMemory=  ((memory-16)/4)*100;
+            int addMemory=  ((memory-16)/4) * 100;
             int addFrequency=((frequency-3600)/400)*200;
 
             return super.getPrice()+ addMemory+ addFrequency;
