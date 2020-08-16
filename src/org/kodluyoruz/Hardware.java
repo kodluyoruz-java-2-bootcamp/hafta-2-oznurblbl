@@ -12,4 +12,38 @@ package org.kodluyoruz;
  */
 public abstract class Hardware
 {
+    private String brand;
+    private double price;
+    private int power;
+
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        //int sayi =1;
+        //int sayi2 = 150;
+        if(power>=1 && power<=250) {
+            this.power = power;
+        }else{
+            System.out.println("1 ile 250 aralığı dışında bir sayı girdiniz!");
+        }
+    }
 }
